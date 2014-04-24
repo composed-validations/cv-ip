@@ -1,0 +1,36 @@
+{
+  "name": "cv-ip",
+  "version": "0.0.1",
+  "description": "The Official IP Validator. Supporting IPv4 address, IPv6 address, IPv4-mapped IPv6 address",
+  "main": "index.js",
+  "browser": "lib/index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/barrier $(find test -name '*_test.js')"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:composed-validations/cv-ip.git"
+  },
+  "keywords": [
+    "composed",
+    "validations",
+    "plugin",
+    "ip",
+    "ipv4",
+    "ipv4 mapped",
+    "ipv6",
+    "ipv6 full",
+    "ipv6 compressed",
+    "validator"
+  ],
+  "author": "Djalma Araujo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/composed-validations/cv-ip/issues"
+  },
+  "homepage": "https://github.com/composed-validations/cv-ip",
+  "devDependencies": {
+    "barriertest": "~0.4.1",
+    "composed-validations": "~0.4.0"
+  }
+}
