@@ -10,13 +10,18 @@ The Official IP Validator. Supporting IPv4 address, IPv6 address, IPv4-mapped IP
 npm install cv-ip
 ```
 
-# How to Use
 ```javascript
 var validations = require('composed-validations');
 var ipValidator = require('cv-ip')(validations);
 
-ipValidator.test("127.0.0.1"); // will return 127.0.0.1
-ipValidator.test("-----.---.%.2"); // false (will throw an error with the error message: is not a valid ip address)
+// The accepts option is optional.
+// If you don't pass, will accept ipv4 and ipv6 ips
+
+var validator = ipValidator({accepts: ['ipv4']})
+
+validator.test("127.0.0.1") // will return 127.0.0.1
+
+validator.test("1:2:3:4:5:6:7:8") // false (ValidatorError with the message: is not a valid ip address)
 
 ```
 
