@@ -1,6 +1,6 @@
 {
   "name": "cv-ip",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "The Official IP Validator. Supporting IPv4 address, IPv6 address, IPv4-mapped IPv6 address",
   "main": "index.js",
   "browser": "lib/index.js",
